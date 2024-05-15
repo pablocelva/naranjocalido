@@ -25,15 +25,15 @@ body {
 }
 
 header {
-    position: sticky;
-    /* width: 100%; */
+    /* position: fixed;
+    width: 100%;
     top: 0;
-    /* bottom: 0; */
-    /* right: 0; */
-    /* left: 0; */
+    bottom: 0;
+    right: 0;
+    left: 0; */
     display: flex;
     justify-content: space-between;
-    padding: 3em;
+    padding: 2em;
 }
 
 nav {
@@ -53,9 +53,8 @@ nav {
 
 h1 {
     font-family: instrument serif;
-    font-size: 5rem;
+    font-size: 4em;
     font-weight: 500;
-    
 }
 
 a {
@@ -64,7 +63,7 @@ a {
 }
 
 .iconos {
-    font-size: 2em;
+    font-size: 1em;
     display: flex;
     gap: 1em;
 }
@@ -72,6 +71,18 @@ a {
 iframe {
     min-height: 50vh;
     margin: 6em;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    width: 80% auto;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    width: 80% auto;
 }
 
 
@@ -89,7 +100,12 @@ iframe {
 }
 
 footer {
-    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 0em; */
+    padding: 2em;
 }
 
 i:hover {
@@ -98,4 +114,10 @@ i:hover {
 
 a:hover {
     color: orange;
+}
+
+@media (min-width: 576px) {
+    h1 {
+    font-size: 5rem;
+    }
 }
