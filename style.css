@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    color: aliceblue;
+    color: whitesmoke;
     font-family: raleway;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
@@ -66,10 +66,18 @@ h1 {
     font-family: instrument serif;
     font-size: 4em;
     font-weight: 500;
+    box-shadow: 0 0 25px solid #c78b8b;
+    cursor: pointer;
+    transition: 0.2s linear;
 }
 
-a {
-    color: aliceblue;
+h1:hover {
+    color: orange;
+    transform: scale(1.05);
+}
+
+/* a {
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -77,11 +85,43 @@ a {
     font-size: 3em;
     display: flex;
     gap: 1em;
+} */
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    /* border: 0.2rem solid orangered; */
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: whitesmoke;
+    /* color: #c78b8b; */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    /* color: #555478; */
+    /* color: #fff; */
+    color: whitesmoke;
+    transform: scale(1.3) translateY(-5px);
+    background-color: blueviolet;
+    box-shadow: 0 0 25px orange;
 }
 
 iframe {
     min-height: 50vh;
     margin: 6em;
+    transition: 0.2s linear;
+}
+
+iframe:hover {
+    transform: scale(1.05);
 }
 
 .player {
@@ -119,13 +159,13 @@ footer {
     padding: 2em;
 }
 
-i:hover {
+/* i:hover {
     color: orange;
 }
 
 a:hover {
     color: orange;
-}
+} */
 
 @media (min-width: 576px) {
     h1 {
